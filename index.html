@@ -7,7 +7,7 @@
     <style>
       html,
       body,
-      #viewDiv {
+      #SMNviewDiv {
         padding: 0;
         margin: 0;
         height: 100%;
@@ -21,20 +21,20 @@
     <script>
       require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
         var map = new Map({
-          basemap: "topo-vector"
+          basemap: "dark-gray"
         });
 
         var view = new MapView({
-          container: "viewDiv",
+          container: "SMNviewDiv",
           map: map,
           zoom: 4,
-          center: [38.634, -90.200] // longitude, latitude
+          center: [-90.3, 38.6] // longitude, latitude
         });
       });
     </script>
   </head>
 
   <body>
-    <div id="viewDiv"></div>
+    <div id="SMNviewDiv"></div>
   </body>
 </html>
